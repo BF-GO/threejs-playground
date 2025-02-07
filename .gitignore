@@ -1,4 +1,4 @@
 /.vscode
 /blender
-/node_modules
-/package-lock.json
+/three-npm/node_modules
+/three-npm/package-lock.json

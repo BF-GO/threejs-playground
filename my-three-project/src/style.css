@@ -1,4 +1,3 @@
-/* Базовые стили */
 body,
 html {
 	margin: 0;
@@ -7,13 +6,11 @@ html {
 	font-family: Arial, sans-serif;
 }
 
-/* Контейнер страницы */
 .page__container {
 	display: flex;
 	height: 100vh;
 }
 
-/* Стили для панели управления (БЭМ блок control-panel) */
 .control-panel {
 	width: 300px;
 	background-color: #f4f4f4;
@@ -55,7 +52,6 @@ html {
 	background-color: #e0e0e0;
 }
 
-/* Стили для 3D области (БЭМ блок apartment) */
 .apartment {
 	flex: 1;
 	display: flex;

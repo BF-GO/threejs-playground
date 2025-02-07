@@ -1,10 +1,8 @@
-import * as THREE from './three.module.js'; // Путь к файлу
-console.log('Three.js загружен:', THREE); // Проверяем, импортировался ли THREE
+import * as THREE from './three.module.js';
+console.log('Three.js загружен:', THREE);
 
 const width = window.innerWidth,
 	height = window.innerHeight;
-
-// init
 
 const camera = new THREE.PerspectiveCamera(70, width / height, 0.01, 10);
 camera.position.z = 1;
@@ -21,8 +19,6 @@ const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(width, height);
 renderer.setAnimationLoop(animate);
 document.body.appendChild(renderer.domElement);
-
-// animation
 
 function animate(time) {
 	mesh.rotation.x = time / 2000;
