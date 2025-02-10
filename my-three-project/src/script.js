@@ -6,7 +6,7 @@ import './style.css';
 const scene = new THREE.Scene();
 
 // Объект
-const geometry = new THREE.BoxGeometry(1, 1, 1);
+const geometry = new THREE.BoxGeometry(2, 1, 1);
 const material = new THREE.MeshBasicMaterial({ color: 'purple' });
 const mesh = new THREE.Mesh(geometry, material);
 
@@ -14,10 +14,10 @@ scene.add(mesh);
 
 // Камера
 const sizes = {
-	width: 600,
-	height: 600,
+	width: 1000,
+	height: 1000,
 };
-const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
+const camera = new THREE.PerspectiveCamera(85, sizes.width / sizes.height);
 camera.position.z = 3;
 camera.position.y = 1;
 
