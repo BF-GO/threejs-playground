@@ -4,12 +4,12 @@ console.log('Three.js загружен:', THREE);
 const width = window.innerWidth,
 	height = window.innerHeight;
 
-const camera = new THREE.PerspectiveCamera(70, width / height, 0.01, 10);
-camera.position.z = 1;
+const camera = new THREE.PerspectiveCamera(100, width / height, 1, 10);
+camera.position.z = 2;
 
 const scene = new THREE.Scene();
 
-const geometry = new THREE.BoxGeometry(0.2, 0.2, 0.2);
+const geometry = new THREE.BoxGeometry(0.8, 0.8, 0.8);
 const material = new THREE.MeshNormalMaterial();
 
 const mesh = new THREE.Mesh(geometry, material);
